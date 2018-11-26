@@ -30,7 +30,7 @@ let createdCompetion;
      await league.methods.createCompetition(10).send({
        from:accounts[0], 
        gas: '1000000', 
-       value: web3.utils.toWei('5', 'ether')
+       value: web3.utils.toWei('20', 'ether')
       });
 
   
@@ -53,13 +53,31 @@ let createdCompetion;
     createdCompetion = await league.methods.competitions(0).call()
     assert.ok(createdCompetion);
   })
-  it('allows player to join league', async()=>{
-    await league.methods.joinCompetition(0).send({
+  // it('allows player to join league', async()=>{
+  //   await league.methods.joinCompetition(0).send({
+  //     from: accounts[1],
+  //     gas: '1000000'
+  //   })
+  //   createdCompetion = await league.methods.competitions().competitor(accounts[1]).call()
+  // console.log(createdCompetion)
+
+  // })
+  it("pays legue winner", async()=>{
+      await league.methods.joinCompetition(0).send({
       from: accounts[1],
-      gas: '100000'
+      gas: '1000000'
     })
-  //   const joined = createdCompetion.competitor(accounts[1]);
-  //  console.log(joined)
+
+    await league.methods.awardWinner(0, accounts[1]).send({
+      from: accounts[0],
+      gas: '1000000'
+    });
+    let managerBal = await web3.eth.getBalance(accounts[0]);
+    managerBal = web3.utils.fromWei(managerBal, 'ether')
+    let balance = await web3.eth.getBalance(accounts[1]);
+   balance = web3.utils.fromWei(balance, 'ether')
+    console.log("manager balance ", managerBal)
+    console.log('winner bal: ', balance)
 
   })
 });
