@@ -19,7 +19,8 @@ let createdCompetion;
     factory = await new web3.eth.Contract(compiledFactory.abi)
     .deploy({ data: compiledFactory.bytecode })
     .send({ from: accounts[0], gas: '1000000' });
-     await factory.methods.deployLeague().send({
+
+     await factory.methods.deployLeague().send({ //deploy league
        from: accounts[0],
        gas: '1000000'
      });
