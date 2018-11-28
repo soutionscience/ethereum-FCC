@@ -1,15 +1,13 @@
 const compiledFactory = require('./build/contracts/LeagueFactory.json')
 const HDWalletProvider = require("truffle-hdwallet-provider");
 require('dotenv').config()
-
-const ganache = require('ganache-cli');
 const Web3 = require('web3');
-const web3 = new Web3(ganache.provider());
 
 const mnemonic =process.env.memonic
 const rinkebyApi = process.env.rinkeby
 
 const provider = new HDWalletProvider( mnemonic, rinkebyApi );
+const web3 = new Web3(provider);
 
 const deploy = async ()=>{
     const accounts = await web3.eth.getAccounts(); //getting accounts
