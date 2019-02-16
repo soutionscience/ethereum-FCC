@@ -1,5 +1,6 @@
 pragma solidity ^0.4.22;
 
+
 contract League {
 address public manager;
     //restrictor
@@ -46,7 +47,7 @@ address public manager;
     }
     
     //award winner using winner address
-    function awardWinner(uint index, address winner) public restricted{
+    function awardWinner(uint index, address payable winner) public restricted{
          //check if address is in competition
         require(competitions[index].competitor[winner]);
         // send winner the cash
