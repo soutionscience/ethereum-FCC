@@ -1,0 +1,176 @@
+{
+  "contractName": "test",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058209736d154160fdabc121938893729f8744dcdb80c218bbed0be75190413d137880029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058209736d154160fdabc121938893729f8744dcdb80c218bbed0be75190413d137880029",
+  "sourceMap": "26:46:2:-;;;44:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;44:26:2;26:46;;;;;;",
+  "deployedSourceMap": "26:46:2:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\n\ncontract test {\n  constructor() public {\n  }\n}\n",
+  "sourcePath": "C:/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/test.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/test.sol",
+    "exportedSymbols": {
+      "test": [
+        189
+      ]
+    },
+    "id": 190,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 184,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 189,
+        "linearizedBaseContracts": [
+          189
+        ],
+        "name": "test",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 187,
+              "nodeType": "Block",
+              "src": "65:5:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 188,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "55:2:2"
+            },
+            "returnParameters": {
+              "id": 186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "65:0:2"
+            },
+            "scope": 189,
+            "src": "44:26:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 190,
+        "src": "26:46:2"
+      }
+    ],
+    "src": "0:73:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/test.sol",
+    "exportedSymbols": {
+      "test": [
+        189
+      ]
+    },
+    "id": 190,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 184,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 189,
+        "linearizedBaseContracts": [
+          189
+        ],
+        "name": "test",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 187,
+              "nodeType": "Block",
+              "src": "65:5:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 188,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "55:2:2"
+            },
+            "returnParameters": {
+              "id": 186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "65:0:2"
+            },
+            "scope": 189,
+            "src": "44:26:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 190,
+        "src": "26:46:2"
+      }
+    ],
+    "src": "0:73:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-02-16T10:11:48.817Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

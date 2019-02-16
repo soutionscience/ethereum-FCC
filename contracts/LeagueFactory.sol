@@ -1,4 +1,4 @@
-pragma solidity ^0.4.22;
+pragma solidity ^0.5.0;
 
 import "./League.sol";
 
@@ -7,7 +7,7 @@ contract LeagueFactory {
 
 
   function deployLeague() public{
-        address newLeague = new League(msg.sender);
+        address newLeague = address(new League(msg.sender));
         deployedLeagues.push(newLeague);
         
     }

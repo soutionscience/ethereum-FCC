@@ -1,4 +1,4 @@
-pragma solidity ^0.4.22;
+pragma solidity ^0.5.0;
 
 
 contract League {
@@ -53,6 +53,10 @@ address public manager;
         // send winner the cash
         winner.transfer(competitions[index].prizeMoney);
         
+        
+    }
+    function getCompetitionCount() public view returns(uint){
+        return competitions.length;
         
     }
 }
